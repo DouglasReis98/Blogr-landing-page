@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/*---------Menu---------*/
+header{
+    position: absolute;
+    margin: 4em 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: 400;
+    font-family: Ubuntu;
+    line-height: 2.5em;
+}
+
+#menu-hamburger{
+    display: none;
+}
+
+nav{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    width: 10em;
+    color: #000;
+    background-color: #fff;
+    list-style: none;
+    border-radius: .5em;
+    padding: 1em 1.5em;
+    box-shadow: .1em 0em ;
+}
+
+.dropdown li:hover{
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+#menu, #login_sign-up{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+#menu li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#menu li{
+    display: block;
+}
+
+#menu li span i{
+    font-size: .5rem;
+    margin: 0;
+    vertical-align: middle;
+}
+
+nav hr{
+    display: none;
+}
+
+#login_sign-up li:last-child{
+    background-color: #fff;
+    font-weight: 600;
+    padding: 0 2em;
+    color: hsl(353, 100%, 62%);
+    border-radius: 5em;
+    cursor: pointer;
+}
+
+#login_sign-up li:last-child:hover{
+    background-color: hsl(355, 100%, 74%);
+    color: #fff;
+}
+
+/*---------Section 01---------*/
+
+section:nth-of-type(1){
+    height: 80vh;
+    background: url("../images/bg-pattern-intro-desktop.svg"),linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-bottom-left-radius: 6em;
+    color: #fff;
+    font-family: Overpass;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+section:nth-of-type(1) article{
+    text-align: center;
+    margin-top: 8em;
+}
+
+
+section:nth-of-type(1) article h1{
+    font-size: 3em;
+    margin: 0;
+}
+
+section:nth-of-type(1) article h2{
+    font-size: 1.2em;
+    margin: 1em;
+    font-weight: 100;
+}
+
+section:nth-of-type(1) article ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    padding: 0;
+}
+
+section:nth-of-type(1) article ul li button{
+    margin: 0 .5em;
+    border: 1px solid #fff;
+    border-radius: 2em;
+    padding: .6em 1.5em;
+    font-weight: 600;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+section:nth-of-type(1) article ul li:nth-of-type(1) button{
+    color: hsl(353, 100%, 62%);
+    background-color: #fff;
+}
+
+section:nth-of-type(1) article ul li:nth-of-type(1) button:hover{
+    background-color: hsl(355, 100%, 74%);
+    color: #fff;
+    border: none;
+}
+
+section:nth-of-type(1) article ul li:nth-of-type(2) button:hover{
+    background-color: #fff;
+    color: hsl(355, 100%, 74%);
+    border: none;
+}
+
+/*---------Section 02---------*/
+
+section:nth-of-type(2){
+    height: auto;
+    background-image: url("../images/illustration-editor-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 180% center;
+    background-size: 72%;
+}
+
+section:nth-of-type(2) h1{
+    font-size: 2em;
+    font-family: Overpass;
+    color: hsl(208, 49%, 24%);
+    text-align: center;
+    padding: 2em 0;
+}
+
+section:nth-of-type(2) img{
+    display: none;
+}
+
+section:nth-of-type(2) article{
+    margin: 1em auto;
+    padding: 2em 10%;
+    height: 130vh;
+    width: 100%;
+}
+
+section:nth-of-type(2) article h2{
+    font-size: 1.5em;
+    font-family: Overpass;
+    color: hsl(208, 49%, 24%);
+    margin: 1em auto;
+}
+
+section:nth-of-type(2) article p{
+    font-family: Ubuntu;
+    line-height: 2em;
+    word-spacing: .2em;
+    width: 50%;
+    color: hsl(208, 49%, 24%);
+    font-size: 15px;
+    margin-bottom: 3em;
+}
+
+/*---------Section 02---------*/
+
+section:nth-of-type(3){
+    height: 55vh;
+    background: url(../images/bg-pattern-circles.svg), linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    background-position: -75% 80%;
+    background-repeat: no-repeat;
+    border-radius: 0 5em 0 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  #fff;
+}
+
+section:nth-of-type(3) img{
+    height: 28rem;
+}
+
+section:nth-of-type(3) article{
+    width: 35rem;
+    margin: 0 5em;
+}
+
+section:nth-of-type(3) article h1{
+    font-family: Overpass;
+    font-size: 2em;
+    margin: .5em 0;
+}
+
+section:nth-of-type(3) article p{
+    font-family: Ubuntu;
+    font-size: 16px;
+    line-height: 2em;
+    word-spacing: .2em;
+}
+
+/*---------Section 04---------*/
+
+section:nth-of-type(4){
+    background: url(../images/illustration-laptop-desktop.svg);
+    background-position: -47% center;
+    background-repeat: no-repeat;
+    background-size: 62%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+section:nth-of-type(4) img{
+    display: none;
+}
+
+section:nth-of-type(4) article{
+    width: 40%;
+    margin: 0 8rem;
+}
+
+section:nth-of-type(4) h1{
+    margin: .8em 0;
+    font-family: Overpass;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: hsl(208, 49%, 24%);
+
+}
+
+section:nth-of-type(4) p{
+    font-family: Ubuntu;
+    color: hsl(208, 49%, 24%);
+    line-height: 2em;
+    word-spacing: .2em;
+}
+
+footer{
+    height: max-content;
+    background-color: hsl(240, 10%, 16%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4em 0;
+    border-radius: 0 6em 0 0;
+}
+
+footer img{
+    height: 2.5em;
+}
+
+footer div{
+    height: max-content;
+}
+
+footer div h1{
+    font-family: Ubuntu;
+}
+
+footer div ul{
+    list-style-type: none;
+    margin: 1.5em 0;
+    padding: 0;
+    font-family: Ubuntu;
+    color: hsl(240, 2%, 79%);
+}
+
+footer div ul li {
+    line-height: 2em;
+    cursor: pointer;
+}
+
+footer div ul li:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width : 992px){
+    
+    /*---------Nav---------*/
+    #login_sign-up li:last-child{
+        padding: 0 1em;
+    }
+
+    /*---------Section 03---------*/
+
+    section:nth-of-type(3) img{
+        height: 25rem;
+    }
+
+    section:nth-of-type(3) article{
+        margin: 0 .5em;
+    }
+
+}
+
+@media only screen and (max-width : 768px){
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2em;
+    }
+    
+    /*---------Menu Hamburger---------*/
+    #menu-hamburger{
+        display: block;
+        font-size: 2em;
+    }
+
+    /*---------Nav---------*/
+
+    nav{
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        border-radius: .5em;
+        color: #000;
+        width: 50vw;
+        font-weight: 500;
+        top: 4em;
+        right: 1em;
+    }
+
+    nav #menu, #login_sign-up{
+        display: block;
+        text-align: center;
+        margin: 1em 2em 1em 0;
+    }
+
+    #menu li:hover{
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    nav #menu span i{
+        color: hsl(356, 100%, 66%);
+    }
+
+    nav hr{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        color: hsl(0, 0%, 87%);
+        border: 1px solid;
+    }
+
+    #login_sign-up li{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #login_sign-up li:last-child{
+        padding: 0 2em;
+        background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        color: #fff;
+    }
+
+    #login_sign-up li:last-child:hover{
+        background: hsl(353, 100%, 62%);
+    }
+    
+    section:nth-of-type(1) article h1{
+        font-size: 2em;
+    }
+
+    /*---------Dropdown---------*/
+    .dropdown{
+        display: block;
+        position: relative;
+        width: 100%;
+        color: #7c7c7c;
+        background-color: hsl(0, 0%, 87%);
+        list-style: none;
+        font-weight: 400;
+        border-radius: .5em;
+        box-shadow: none ;
+    }
+    
+    /*---------Section 02---------*/
+    section:nth-of-type(2){
+        background: none;
+        height: max-content;
+        text-align: center;
+    }
+
+    
+    section:nth-of-type(2) img{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section:nth-of-type(2) article p{
+        width: 100%;
+    }
+
+    /*---------Section 03---------*/
+
+    section:nth-of-type(3){
+        height: 100vh;
+        background-position: -75% 80%;
+        background-repeat: no-repeat;
+        border-radius: 0 5em 0 5em;
+        text-align: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    section:nth-of-type(3) img{
+        height: 23rem;
+        position: absolute;
+        top: -11em;
+    }
+
+    /*---------Section 04---------*/
+
+    section:nth-of-type(4){
+        background: none;
+        height: 160vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    section:nth-of-type(4) img{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section:nth-of-type(4) article{
+        width: 100%;
+        margin: 0 0.5em;
+    }
+}
+
+@media only screen and (max-width : 600px){
+
+    nav{
+        width: 100vw;
+        left: 0;
+    }
+
+    #login_sign-up li{
+        width: 50%;
+    }
+
+    section:nth-of-type(1) article ul li button {
+        padding: 0.6em 1em;
+    }
+    
+    section:nth-of-type(2) article, section:nth-of-type(3) article, section:nth-of-type(4) article{
+        padding: 2em 2%;
+    }
+    
+    footer{
+        display: block;
+        text-align: center;
+
+    }
+
+    footer img {
+        margin: 1em;
+    }
+}
