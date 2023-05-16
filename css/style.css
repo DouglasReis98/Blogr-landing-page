@@ -159,18 +159,17 @@ section:nth-of-type(1) article ul li button{
 section:nth-of-type(1) article ul li:nth-of-type(1) button{
     color: hsl(353, 100%, 62%);
     background-color: #fff;
+    border: none;
 }
 
 section:nth-of-type(1) article ul li:nth-of-type(1) button:hover{
     background-color: hsl(355, 100%, 74%);
     color: #fff;
-    border: none;
 }
 
 section:nth-of-type(1) article ul li:nth-of-type(2) button:hover{
     background-color: #fff;
     color: hsl(355, 100%, 74%);
-    border: none;
 }
 
 /*---------Section 02---------*/
@@ -391,9 +390,9 @@ footer div ul li:hover{
         margin: 1em 2em 1em 0;
     }
 
-    #menu li:hover{
+    #menu > li:hover{
         font-weight: 700;
-        text-decoration: none;
+        text-decoration: underline;
         cursor: pointer;
     }
 
@@ -443,8 +442,9 @@ footer div ul li:hover{
 
     }
 
-    .dropdown li{
+    .dropdown > li{
         margin: 0 auto;
+        text-decoration: none;
     }
     
     /*---------Section 02---------*/
