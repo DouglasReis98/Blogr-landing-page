@@ -42,11 +42,18 @@ nav{
     border-radius: .5em;
     padding: 1em 1.5em;
     box-shadow: .1em 0em ;
+    margin: 0 0 0 -2em;
+    cursor: initial;
+}
+
+.dropdown li{
+    width: fit-content;
 }
 
 .dropdown li:hover{
     text-decoration: none !important;
-    font-weight: bold;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 #menu, #login_sign-up{
@@ -55,9 +62,18 @@ nav{
     gap: 2em;
 }
 
-#menu li:hover{
+#menu > li:hover{
     text-decoration: underline;
     cursor: pointer;
+    display: block;
+}
+
+#menu li:hover > span i{
+    rotate: 180deg;
+}
+
+#menu li:hover > .dropdown{
+    display: block;
 }
 
 #menu li{
@@ -347,13 +363,14 @@ footer div ul li:hover{
     /*---------Menu Hamburger---------*/
     #menu-hamburger{
         display: block;
+        cursor: pointer;
         font-size: 2em;
     }
 
     /*---------Nav---------*/
 
     nav{
-        display: block;
+        display: none;
         position: absolute;
         background-color: #fff;
         border-radius: .5em;
@@ -364,6 +381,10 @@ footer div ul li:hover{
         right: 1em;
     }
 
+    .active{
+        display: block;
+    }
+
     nav #menu, #login_sign-up{
         display: block;
         text-align: center;
@@ -371,6 +392,7 @@ footer div ul li:hover{
     }
 
     #menu li:hover{
+        font-weight: 700;
         text-decoration: none;
         cursor: pointer;
     }
@@ -408,7 +430,7 @@ footer div ul li:hover{
 
     /*---------Dropdown---------*/
     .dropdown{
-        display: block;
+        display: none;
         position: relative;
         width: 100%;
         color: #7c7c7c;
@@ -417,6 +439,12 @@ footer div ul li:hover{
         font-weight: 400;
         border-radius: .5em;
         box-shadow: none ;
+        margin: 0 0 0 0;
+
+    }
+
+    .dropdown li{
+        margin: 0 auto;
     }
     
     /*---------Section 02---------*/
@@ -501,7 +529,6 @@ footer div ul li:hover{
     footer{
         display: block;
         text-align: center;
-
     }
 
     footer img {
