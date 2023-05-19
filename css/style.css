@@ -8,6 +8,10 @@
     font-size: 16px;
 }
 
+.active{
+    display: block;
+}
+
 /*---------Menu---------*/
 header{
     position: absolute;
@@ -48,6 +52,7 @@ nav{
 
 .dropdown li{
     width: fit-content;
+    color: #000;
 }
 
 .dropdown li:hover{
@@ -65,14 +70,6 @@ nav{
 #menu > li:hover{
     text-decoration: underline;
     cursor: pointer;
-    display: block;
-}
-
-#menu li:hover > span i{
-    rotate: 180deg;
-}
-
-#menu li:hover > .dropdown{
     display: block;
 }
 
@@ -380,10 +377,6 @@ footer div ul li:hover{
         right: 1em;
     }
 
-    .active{
-        display: block;
-    }
-
     nav #menu, #login_sign-up{
         display: block;
         text-align: center;
@@ -392,7 +385,7 @@ footer div ul li:hover{
 
     #menu > li:hover{
         font-weight: 700;
-        text-decoration: underline;
+        text-decoration: none;
         cursor: pointer;
     }
 
