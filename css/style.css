@@ -87,6 +87,11 @@ nav hr{
     display: none;
 }
 
+#login_sign-up li:first-child:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
 #login_sign-up li:last-child{
     background-color: #fff;
     font-weight: 600;
