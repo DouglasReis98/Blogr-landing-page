@@ -8,10 +8,6 @@
     font-size: 16px;
 }
 
-.active{
-    display: block;
-}
-
 /*---------Menu---------*/
 header{
     position: absolute;
@@ -371,7 +367,8 @@ footer div ul li:hover{
     /*---------Nav---------*/
 
     nav{
-        display: none;
+        display: block;
+        visibility: hidden;
         position: absolute;
         background-color: #fff;
         border-radius: .5em;
@@ -380,6 +377,13 @@ footer div ul li:hover{
         font-weight: 500;
         top: 4em;
         right: 1em;
+        height: 0;
+        transition: height 2s;
+    }
+
+    nav.active{
+        visibility: visible;
+        height: auto;
     }
 
     nav #menu, #login_sign-up{
