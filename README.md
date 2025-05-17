@@ -50,6 +50,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Douglas Reis](http://douglasreis.epizy.com)
+- Website - [Douglas Reis](http://douglasreis.vercel.app)
 - Frontend Mentor - [@DouglasReis98](https://www.frontendmentor.io/profile/DouglasReis98)
 - LinkedIn - [@douglas-reis98](https://www.linkedin.com/in/douglas-reis98/)
